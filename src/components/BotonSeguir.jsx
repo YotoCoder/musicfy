@@ -14,24 +14,25 @@ export const BotonSeguir = () => {
         color: 'white',
     }}>
         <button style={{
-            'box-sizing': 'border-box',
+            position: 'absolute',
+            'boxSizing': 'border-box',
 
-            width: '5.6875rem',
+            width: '7.6875rem',
             height: '2rem',
-            left: '15.8125rem',
-            top: '18.5rem',
+            left: '-30px',
             
             background: '#131313',
             border: '1px solid #616161',
-            'border-radius': '.1875rem',
-            'font-family': 'Abhaya Libre Medium',
-            'font-style': 'normal',
-            'font-weight': 500,
-            'font-size': '13px',
-            'line-height': '15px',
-            'letter-spacing': '0.055em',
+            'borderRadius': '.1875rem',
+            'fontFamily': 'Abhaya Libre Medium',
+            'fontStyle': 'normal',
+            'fontWeight': 500,
+            'fontWeight': '13px',
+            'lineHeight': '15px',
+            'letterSpacing': '0.055em',
 
-            color: '#E2E2E2'
+            color: '#E2E2E2',
+            value: 'xd',
         }} 
 
           onClick={() => setSeguir(!seguir)}

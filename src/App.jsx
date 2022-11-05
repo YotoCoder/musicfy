@@ -4,7 +4,6 @@ import { Reproductor } from './pages/Reproductor'
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     

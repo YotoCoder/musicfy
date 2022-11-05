@@ -9,11 +9,11 @@ export const Titulo = () => {
             left: '6.25rem',
             top: '43%',
             color: 'white',
-            'font-family': 'Abhaya Libre Medium',
-            'font-style': 'normal',
-            'font-weight': 500,
-            'font-size': '1.5rem',
-            'line-height': '173.97%',
+            'fontFamily': 'Abhaya Libre Medium',
+            'fontStyle': 'normal',
+            'fontWeight': 500,
+            'fontWeight': '1.5rem',
+            'lineHeight': '173.97%',
         }}
     >
         Top 10

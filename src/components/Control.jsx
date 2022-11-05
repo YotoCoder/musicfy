@@ -1,10 +1,12 @@
+import { useAtom } from "jotai";
 import { useState } from "react";
+import { playAtom } from "../store/Store";
 
 export const Control = () => {
     const tiempo_actual = '2:50'
     const tiempo_total = '4:23'
 
-    const [play, setPlay] = useState(false);
+    const [play, setPlay] = useAtom(playAtom);
 
     const [like, setLike] = useState(false);
 
@@ -15,14 +17,14 @@ export const Control = () => {
   return (
     <div className="flex flex-col"
          style={{
-            'box-sizing': 'border-box',
+            'boxSizing': 'border-box',
             position: 'absolute',
             width: '100%',
             height: '4.5rem',
             left: '0px',
             top: 'calc(100% - 4.5rem)',
             background: '#181818',
-            'border-top': '.0313rem solid #5E5E5E',
+            'borderTop': '.0313rem solid #5E5E5E',
           }}
     >
 
@@ -46,11 +48,11 @@ export const Control = () => {
                         >
                         {like ? (
                             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.7" d="M6.85297 2.04065C5.28499 0.870821 3.09453 1.03618 1.71993 2.42813V2.42813C0.212264 3.95484 0.212264 6.40999 1.71993 7.93669L2.41771 8.64329L2.41181 8.64929L7.52959 13.8317V13.8317C7.53281 13.8284 7.53812 13.8284 7.54134 13.8317V13.8317L12.6591 8.64929L12.6532 8.64329L13.351 7.93669C14.8587 6.40999 14.8587 3.95484 13.351 2.42813V2.42813C11.9764 1.03618 9.78594 0.870821 8.21796 2.04065L7.53547 2.54984L6.85297 2.04065Z" stroke="white" stroke-linejoin="round"/>
+                            <path opacity="0.7" d="M6.85297 2.04065C5.28499 0.870821 3.09453 1.03618 1.71993 2.42813V2.42813C0.212264 3.95484 0.212264 6.40999 1.71993 7.93669L2.41771 8.64329L2.41181 8.64929L7.52959 13.8317V13.8317C7.53281 13.8284 7.53812 13.8284 7.54134 13.8317V13.8317L12.6591 8.64929L12.6532 8.64329L13.351 7.93669C14.8587 6.40999 14.8587 3.95484 13.351 2.42813V2.42813C11.9764 1.03618 9.78594 0.870821 8.21796 2.04065L7.53547 2.54984L6.85297 2.04065Z" stroke="white" strokeLinejoin="round"/>
                         </svg>
                         ) : (
                             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path opacity="0.7" d="M6.85297 2.04065C5.28499 0.870821 3.09453 1.03618 1.71993 2.42813C0.212264 3.95484 0.212264 6.40999 1.71993 7.93669L2.41771 8.64329L2.41181 8.64929L7.52959 13.8317C7.53281 13.8284 7.53812 13.8284 7.54134 13.8317L12.6591 8.64929L12.6532 8.64329L13.351 7.93669C14.8587 6.40999 14.8587 3.95484 13.351 2.42813C11.9764 1.03618 9.78594 0.870821 8.21796 2.04065L7.53547 2.54984L6.85297 2.04065Z" fill="#1ED760" stroke="#1ED760" stroke-linejoin="round"/>
+                                <path opacity="0.7" d="M6.85297 2.04065C5.28499 0.870821 3.09453 1.03618 1.71993 2.42813C0.212264 3.95484 0.212264 6.40999 1.71993 7.93669L2.41771 8.64329L2.41181 8.64929L7.52959 13.8317C7.53281 13.8284 7.53812 13.8284 7.54134 13.8317L12.6591 8.64929L12.6532 8.64329L13.351 7.93669C14.8587 6.40999 14.8587 3.95484 13.351 2.42813C11.9764 1.03618 9.78594 0.870821 8.21796 2.04065L7.53547 2.54984L6.85297 2.04065Z" fill="#1ED760" stroke="#1ED760" strokeLinejoin="round"/>
                             </svg>
                         )}
                         
@@ -131,14 +133,14 @@ export const Control = () => {
                             <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="17" cy="17" r="17" fill="white"/>
                             <g filter="url(#filter0_d_2_215)">
-                            <path d="M13 10V25" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+                            <path d="M13 10V25" stroke="black" strokeWidth="4" strokeLinejoin="round"/>
                             </g>
                             <g filter="url(#filter1_d_2_215)">
-                            <path d="M21 10V25" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+                            <path d="M21 10V25" stroke="black" strokeWidth="4" strokeLinejoin="round"/>
                             </g>
                             <defs>
-                            <filter id="filter0_d_2_215" x="7" y="10" width="12" height="23" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <filter id="filter0_d_2_215" x="7" y="10" width="12" height="23" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                            <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                             <feOffset dy="4"/>
                             <feGaussianBlur stdDeviation="2"/>
@@ -147,8 +149,8 @@ export const Control = () => {
                             <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_215"/>
                             <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_215" result="shape"/>
                             </filter>
-                            <filter id="filter1_d_2_215" x="15" y="10" width="12" height="23" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <filter id="filter1_d_2_215" x="15" y="10" width="12" height="23" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                            <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                             <feOffset dy="4"/>
                             <feGaussianBlur stdDeviation="2"/>
@@ -239,11 +241,11 @@ export const Control = () => {
                         position: 'absolute',
                         left: 'calc(4% - 2.5rem)',
                         top: 'calc(0% - .5rem)',
-                        'font-family': 'Inter',
-                        'font-style': 'normal',
-                        'font-weight': 400,
-                        'font-size': '.8125rem',
-                        'line-height': '1rem',
+                        'fontFamily': 'Inter',
+                        'fontStyle': 'normal',
+                        'fontWeight': 400,
+                        'fontWeight': '.8125rem',
+                        'lineHeight': '1rem',
                         color: '#5E5E5E'
                     }}>
                     {tiempo_actual}
@@ -258,7 +260,7 @@ export const Control = () => {
                         width: '14.625rem',
                         height: '.25rem',
                         background: '#5E5E5E',
-                        'border-radius': '.1875rem'
+                        'borderRadius': '.1875rem'
                     }}
                 >
                 </div>
@@ -269,11 +271,11 @@ export const Control = () => {
                         left: 'calc(100% - 2.5rem)',
                         top: 'calc(0% - .5rem)',
                         
-                        'font-family': 'Inter',
-                        'font-style': 'normal',
-                        'font-weight': 400,
-                        'font-size': '.8125rem',
-                        'line-height': '1rem',
+                        'fontFamily': 'Inter',
+                        'fontStyle': 'normal',
+                        'fontWeight': 400,
+                        'fontWeight': '.8125rem',
+                        'lineHeight': '1rem',
                         
                         color: '#5E5E5E'
                     }}>
@@ -287,7 +289,7 @@ export const Control = () => {
                     width: '12.625rem',
                     height: '.25rem',
                     background: '#ffffff',
-                    'border-radius': '.1875rem'
+                    'borderRadius': '.1875rem'
                 }}>
                     {/* ruedita al final de la barra de progreso */}
                     
@@ -296,7 +298,7 @@ export const Control = () => {
                         width: '.625rem',
                         height: '.625rem',
                         background: '#ffffff',
-                        'border-radius': '50%',
+                        'borderRadius': '50%',
                         left: 'calc(100% - .625rem)',
                         top: 'calc(0% - .1875rem)'
                     }}>

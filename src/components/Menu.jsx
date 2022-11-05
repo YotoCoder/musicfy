@@ -9,7 +9,7 @@ export const Menu = () => {
         'zIndex': '1',
 
         background: 'linear-gradient(0deg, #282828, #282828)',
-        'box-shadow': '0px 4px 4px 2px rgba(0, 0, 0, 0.25)'
+        'boxShadow': '0px 4px 4px 2px rgba(0, 0, 0, 0.25)'
     }}>
         <div style={{
             position: 'absolute',
@@ -19,14 +19,14 @@ export const Menu = () => {
             left: '12px',
             top: '4px',
             
-            'font-family': 'Aleo',
-            'font-style': 'normal',
-            'font-weight': 400,
-            'font-size': '14px',
-            'line-height': '173.97%',
+            'fontFamily': 'Aleo',
+            'fontStyle': 'normal',
+            'fontWeight': 400,
+            
+            'lineHeight': '173.97%',
             /* or 24px */
             
-            'letter-spacing': '0.04em',
+            'letterSpacing': '0.04em',
             
             color: '#FDFDFD'
             
@@ -36,8 +36,8 @@ export const Menu = () => {
                 <p>Cuenta</p> 
                 <p className="relative left-10 top-1">
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.58333 5.81482L11 1M11 1V4.33333M11 1H7.24999" stroke="#EAEAEA" stroke-width="1.5"/>
-                <path d="M5.16667 1.37037H1V11H11V6.55555" stroke="#EAEAEA" stroke-width="1.5"/>
+                <path d="M5.58333 5.81482L11 1M11 1V4.33333M11 1H7.24999" stroke="#EAEAEA" strokeWidth="1.5"/>
+                <path d="M5.16667 1.37037H1V11H11V6.55555" stroke="#EAEAEA" strokeWidth="1.5"/>
                 </svg>
                 </p>
             </div>

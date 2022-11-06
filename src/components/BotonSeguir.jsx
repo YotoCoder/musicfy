@@ -17,9 +17,9 @@ export const BotonSeguir = () => {
             position: 'absolute',
             'boxSizing': 'border-box',
 
-            width: '7.6875rem',
+            width: '6.6875rem',
             height: '2rem',
-            left: '-30px',
+            left: '-20px',
             
             background: '#131313',
             border: '1px solid #616161',
@@ -27,7 +27,7 @@ export const BotonSeguir = () => {
             'fontFamily': 'Abhaya Libre Medium',
             'fontStyle': 'normal',
             'fontWeight': 500,
-            'fontWeight': '13px',
+            'fontSize': '13px',
             'lineHeight': '15px',
             'letterSpacing': '0.055em',
 

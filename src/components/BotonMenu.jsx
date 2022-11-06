@@ -7,12 +7,15 @@ export const BotonMenu = () => {
 
   return (
     <div 
+        className=""
         style={{
             position: 'absolute',
             width: '1.4375rem',
             height: '.3125rem',
             left: '88%',
             top: '1.3125rem',
+            cursor: 'pointer',
+            
         }}
         onClick={() => setOpenMenu(!openMenu)}
     >

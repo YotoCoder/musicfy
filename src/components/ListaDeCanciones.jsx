@@ -139,7 +139,7 @@ export const ListaDeCanciones = () => {
                   "fontFamily": "Abhaya Libre Medium",
                   "fontStyle": "normal",
                   "fontWeight": 4,
-                  "fontWeight": "1rem",
+                  "fontSize": "1rem",
                   color: "#B3B3B3",
                 }}
               >
@@ -174,7 +174,7 @@ export const ListaDeCanciones = () => {
                   "fontFamily": "Abhaya Libre Medium",
                   "fontStyle": "normal",
                   "fontWeight": 4,
-                  "fontWeight": "1rem",
+                  "fontSize": "1rem",
                   color: (current === i && play) ? "#1ed660" : "white",
                   width: "67%",
                 }}
@@ -189,7 +189,7 @@ export const ListaDeCanciones = () => {
                   "fontFamily": "Inter",
                   "fontStyle": "normal",
                   "fontWeight": 400,
-                  "fontWeight": ".8125rem",
+                  "fontSize": ".8125rem",
                   "lineHeight": "1rem",
                   color: "#5E5E5E",
                 }}

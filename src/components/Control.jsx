@@ -15,7 +15,7 @@ export const Control = () => {
     const [random, setRandom] = useState(false);
 
   return (
-    <div className="flex flex-col"
+    <div className=""
          style={{
             'boxSizing': 'border-box',
             position: 'absolute',
@@ -160,7 +160,8 @@ export const Control = () => {
                             <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_215" result="shape"/>
                             </filter>
                             </defs>
-                        </svg>
+                            </svg>
+                            
                         ) : (
                             <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="17" cy="17" r="17" fill="white"/>
@@ -244,8 +245,8 @@ export const Control = () => {
                         'fontFamily': 'Inter',
                         'fontStyle': 'normal',
                         'fontWeight': 400,
-                        'fontWeight': '.8125rem',
-                        'lineHeight': '1rem',
+                        'fontSize': '.8125rem',
+                        //'lineHeight': '1rem',
                         color: '#5E5E5E'
                     }}>
                     {tiempo_actual}
@@ -274,7 +275,7 @@ export const Control = () => {
                         'fontFamily': 'Inter',
                         'fontStyle': 'normal',
                         'fontWeight': 400,
-                        'fontWeight': '.8125rem',
+                        'fontSize': '.8125rem',
                         'lineHeight': '1rem',
                         
                         color: '#5E5E5E'

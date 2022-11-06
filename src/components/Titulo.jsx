@@ -12,7 +12,7 @@ export const Titulo = () => {
             'fontFamily': 'Abhaya Libre Medium',
             'fontStyle': 'normal',
             'fontWeight': 500,
-            'fontWeight': '1.5rem',
+            'fontSize': '1.5rem',
             'lineHeight': '173.97%',
         }}
     >
